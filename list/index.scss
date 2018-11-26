@@ -1,0 +1,24 @@
+// ui-list
+.ui-list {
+    overflow: auto;
+    list-style: none;
+    height: 100%;
+
+    .ui-list-item {
+        &.active {
+            color: #e2231a;
+            
+            .ui-icon-checked {
+                display: block;
+            }
+        }
+    }
+
+    .ui-icon-checked {
+        display: none;
+        width: 30px;
+        height: 30px;
+        background: url("../images/icon_checked_single.png") no-repeat;
+        background-size: cover;
+    }
+}

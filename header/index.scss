@@ -1,0 +1,41 @@
+// ui-header
+.ui-header {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    
+    .ui-back-icon {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background: url("../images/icon_arrow_left.png") no-repeat;
+        background-position: center;
+        background-size: 40px;
+    }
+
+    .ui-close-icon {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background: url("../images/icon_close_30.png") no-repeat;
+        background-position: center;
+        background-size: 30px;
+    }
+
+    .ui-title {
+        display: flex;
+        display: -webkit-flex;
+        -webkit-flex: 1;
+        flex: 1;
+        font-family: Helvetica;
+        font-size: 32px;
+        letter-spacing: 0;
+        color: #333;
+
+        &.padding-left {
+            padding-left: 20px;
+        }
+    }
+}

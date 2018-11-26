@@ -1,0 +1,13 @@
+<div class="ui-header">
+    <i class="ui-back-icon" 
+        {{ if !backIconShow }}
+            style="display:none;"
+        {{/if}}
+    ></i>
+    <div class="ui-title">{{ titleName }}</div>
+    <i class="ui-close-icon"
+        {{ if !closeIconShow }}
+            style="display:none;"
+        {{/if}}
+    ></i>
+</div>

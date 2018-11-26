@@ -1,0 +1,17 @@
+<ul class="ui-list">
+    {{ if listData.length > 0 }}
+        {{each listData}}
+            <li class="ui-list-item {{if defaultId == $value.id}} active {{/if}}" >
+                {{if listType == "thirdAddress"}}
+                    <div class="address-list-item" data-id="{{ $value.id }}" data-action="{{ $value.action }}" >{{ $value.name }}</div>
+                    <i class="ui-icon-checked"></i>
+                {{ else if listType == "commonAddress"}}
+                    <i class="common-location-icon"></i>
+                    <div class="common-text" data-id="{{ $value.provinceId}}_{{$value.cityId}}_{{$value.countyId}}#{{ $value.id}}">{{ $value.fullAddress }}</div>
+                {{ else if listType == "normal"}}
+                    {{@ $value | normal}}
+                {{/if}}
+            </li>
+        {{/each}}
+    {{/if}}
+</ul>
